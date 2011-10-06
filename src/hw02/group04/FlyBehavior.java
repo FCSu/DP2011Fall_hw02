@@ -1,4 +1,4 @@
-package hw02.group99;
+package hw02.group04;
 
 public interface FlyBehavior {
 
