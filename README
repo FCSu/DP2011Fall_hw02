@@ -1,2 +1,13 @@
 This is homework #2 of the course Software Design Patterns 2011 Fall, NTU.
 All rights reserved.
+
+
+Requirements
+============
+
+沒轍是一件糟糕的事。
+
+上課時，我們已經介紹過了 Strategy Pattern。 附檔中 package hw02.group99 就是用 Strategy Pattern 的概念實作出了一堆鴨子。 另外還有一個 JUint 的測試程式 DuckTEST，可以用來檢驗鴨子程式實作的正確性。 它先讀取 groupID.txt 的第一行，附檔是 "group99"。 然後用 reflection 技巧找到 hw02.group99.Duck, hw02.group99.DecoyDuck, hw02.group99.MallardDuck, hw02.group99.RedHeadDuck, hw02.group99.RubberDuck, hw02.group99.ModelDuck 等 6 個 classes， 其中 Duck 是 superclass，其他 5 個是 subclasses。 還找到了 hw02.group99.Duck 中的 display(), fly(), quack(), swim(), useRocket() 等 5 個 public instance methods， 其他的 classes 可以 override 這些 methods。 最後用 newInstance() 要出上述 5 個 subclasses 的物件，並用 invoke() 對他們進行一連串的測試。 注意：reflection 的 getMethod() 只能找出 public methods， 所以 display() 等 5 個 methods 一定得是 public， 否則 JUnit 過不了。
+
+本作業的目標是重新實作鴨子程式，但是不准引用 Strategy Pattern 的概念。 有時候，逆向思考是有正向意義的。 克制自己不准用 design patterns 的概念去寫程式，是有機會更深刻體會到 design patterns 的好處。
+
