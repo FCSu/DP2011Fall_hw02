@@ -1,4 +1,4 @@
-package hw02.group04;
+package hw02.group99;
 
 public class RedHeadDuck extends Duck {
 
